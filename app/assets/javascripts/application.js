@@ -13,4 +13,16 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require SmoothScroll
+//= require bootstrap.min
+//= require cable
+//= require contact_me
+//= require easypiechart
+//= require jqBootstrapValidation
+//= require jquery.1.11.1
+//= require jquery.counterup
+//= require jquery.isotope
+//= require jquery.prettyPhoto
+//= require main
+//= require waypoints
 //= require_tree .

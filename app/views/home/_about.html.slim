@@ -1,0 +1,19 @@
+/! About Section
+#about
+  .container
+    .section-title.text-center.center
+      h2 About Me
+      hr/
+    .row
+      .col-md-12.text-center
+        / img.img-responsive src="img/about.jpg" /
+        = image_tag "about.jpg", class: "img-responsive"
+
+      .col-md-8.col-md-offset-2
+        .about-text
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.
+          p.text-center
+            a.btn.btn-primary href="#"
+              i.fa.fa-download
+              | Download Resume

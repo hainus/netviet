@@ -1,0 +1,57 @@
+/! Contact Section
+#contact.text-center
+  .container
+    .section-title.center
+      h2 Contact
+      hr/
+    .col-md-8.col-md-offset-2
+      .col-md-4
+        i.fa.fa-map-marker.fa-2x
+        p
+          | 4321 California St,
+          br/
+          | San Francisco, CA 12345
+      .col-md-4
+        i.fa.fa-envelope-o.fa-2x
+        p info@company.com
+      .col-md-4
+        i.fa.fa-phone.fa-2x
+        p +1 123 456 1234
+      .clearfix
+    .col-md-8.col-md-offset-2
+      h3 Leave me a message
+      form#contactForm name="sentMessage" novalidate=""
+        .row
+          .col-md-6
+            .form-group
+              input#name.form-control placeholder="Name" required="required" type="text" /
+              p.help-block.text-danger
+          .col-md-6
+            .form-group
+              input#email.form-control placeholder="Email" required="required" type="email" /
+              p.help-block.text-danger
+        .form-group
+          textarea#message.form-control name="message" placeholder="Message" required="" rows="4"
+          p.help-block.text-danger
+        #success
+        button.btn.btn-default type="submit"  Send Message
+      .social
+        ul
+          li
+            a href="#"
+              i.fa.fa-facebook
+          li
+            a href="#"
+              i.fa.fa-twitter
+          li
+            a href="#"
+              i.fa.fa-dribbble
+          li
+            a href="#"
+              i.fa.fa-github
+          li
+            a href="#"
+              i.fa.fa-instagram
+          li
+            a href="#"
+              i.fa.fa-linkedin
