@@ -55,3 +55,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'slim-rails', '3.1.0'
 gem 'sprockets-rails', '~> 3.0', '>= 3.0.4'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+gem 'pg', '~> 0.18.2'
