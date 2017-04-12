@@ -173,7 +173,7 @@ hr {
 	padding: 100px 0;
 	text-align: center;
 	color: #fff;
-	background: url('maxresdefault.jpg') no-repeat center top;
+	background: url('banner5.webp') no-repeat center top;
 	background-color: #7bc3d1;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -664,6 +664,10 @@ header .intro-text {
 	padding-top: 300px;
 	padding-bottom: 200px;
 }
+header#header{
+  height: 90%
+}
+
 .timeline:before {
 	left: 50%;
 }
