@@ -1,0 +1,17 @@
+/! Achievements Section
+#partners.text-center
+  .container
+    .section-title.center
+      h2 ĐỐI TÁC
+      hr/
+    - row_number = 1
+    - col_number = 1
+    - 4.times do
+      .row
+        - 4.times do
+          .col-md-3.col-sm-3
+            = image_tag "logo/logo_#{col_number}.png",  size: "200x200", class: "img-responsive"
+
+          - col_number += 1
+        - row_number += 1
+

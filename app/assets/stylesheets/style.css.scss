@@ -5,7 +5,16 @@ body, html {
 	color: #656c6d;
 	width: 100% !important;
 	height: 100% !important;
+  /*background: url('bg.jpg') no-repeat center top;*/
+  background: url('banner5.gif') no-repeat center top;
+
+  background-attachment:fixed;
+  background-position: left top;
+  position:absolute;
+
+  background-size: cover;
 }
+
 h1 {
 	font-weight: 700;
 }
@@ -89,7 +98,7 @@ hr {
 }
 .navbar-custom {
 	margin-bottom: 0;
-	background-color: #121d1f;
+	background-color: darkred;
 	border-radius: 0px;
 	padding: 10px 0;
 }
@@ -173,8 +182,9 @@ hr {
 	padding: 100px 0;
 	text-align: center;
 	color: #fff;
-	background: url('banner5.webp') no-repeat center top;
+	/*background: url('banner5.webp') no-repeat center top;*/
 	background-color: #7bc3d1;
+  opacity: 0.6;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -508,6 +518,20 @@ ol.type li a:hover {
 .timeline .timeline-body>p, .timeline .timeline-body>ul {
 	margin-bottom: 0;
 }
+
+
+/* partners Section */
+#partners {
+  padding: 100px 0;
+  background: white;
+  .logo-icon{
+    width: 200px;
+    height: 200px;
+    vertical-align: middle;
+    text-align: center;
+  }
+}
+
 /* Contact Section */
 #contact {
 	padding: 100px 0 40px 0;
