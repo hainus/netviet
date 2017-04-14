@@ -6,7 +6,16 @@ body, html {
 	width: 100% !important;
 	height: 100% !important;
   /*background: url('bg.jpg') no-repeat center top;*/
-  background: url('banner5.gif') no-repeat center top;
+  // background: url('banner5.gif') no-repeat center top;
+
+  // background-attachment:fixed;
+  // background-position: left top;
+  // position:absolute;
+
+  // background-size: cover;
+}
+body{
+  background: url('intro-banner.jpg') no-repeat center top;
 
   background-attachment:fixed;
   background-position: left top;
