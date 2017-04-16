@@ -1,0 +1,19 @@
+/* Home Section */
+.intro {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+  /*background: url('banner5.webp') no-repeat center top;*/
+  background-color: #e8bb8c;
+  opacity: 0.4;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.section-title.center {
+  padding: 25px 0 45px 0;
+}
