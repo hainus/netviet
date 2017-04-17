@@ -2,7 +2,12 @@
 #contact {
   padding: 100px 0 40px 0;
   color: #121d1f;
-  background: #7bc3d1;
+  // background: #7bc3d1;
+  background: url('bg/bg8.jpg')  center top;
+  // background-size: contain;
+  p{
+    font-size: 18px;
+  }
 }
 #contact h2 {
   color: #fff;
@@ -42,8 +47,11 @@ label {
   color: #2c3e50;
   background-color: rgba(255,255,255,0.8);
   background-image: none;
-  border: 0;
-  border-radius: 2px;
+  border: 1px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+  border-color: green;
   -webkit-box-shadow: none;
   box-shadow: none;
   -webkit-transition: none;

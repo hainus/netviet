@@ -27,7 +27,14 @@
                 .hover-text
                   h4 Giám sát nhà riêng
                   small Giải Pháp Camera
-                = image_tag "portfolio/01-small.jpg", class: "img-responsive", alt: "Project Title"
+
+                = image_tag "portfolio/01-small.jpg", class: "img-responsive img-proj", alt: "Project Title"
+            .btn.btn-primary
+              = link_to download_pdf_home_index_url, class:'btn btn-primary download-details', target: "_blank"
+                p.text-center
+                  i.fa.fa-download.text-center
+                  | Download
+
 
 
         .col-sm-6.col-md-3.col-lg-3.web
