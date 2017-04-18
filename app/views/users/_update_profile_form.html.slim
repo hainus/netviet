@@ -1,7 +1,7 @@
-- if user.new_record?
-  - btn_string = t('common.add')
-- else
-  - btn_string = t('common.save_change')
+/ - if user.new_record?
+/   - btn_string = t('common.add')
+/ - else
+/   - btn_string = t('common.save_change')
 = form_for user, url: update_profile_users_path, id: 'user-form', html: {method: :put, multipart: true, class: 'form-horizontal user-form'} do |f|
 
   #user-form.block-content
@@ -41,7 +41,7 @@
     .row.top-space
       .col-md-4
         .form-group
-          = f.submit class: 'btn btn-sm btn-primary', value: "Save change"
-          = link_to root_path, class: 'btn btn-sm btn-default'
-            .btn.btn-sm.btn-danger
+          = f.submit "Update",  class: 'btn btn-success update'
+          = link_to root_path, class: 'cancel'
+            .btn.btn-danger
               |Cancel
