@@ -1,0 +1,47 @@
+- if user.new_record?
+  - btn_string = t('common.add')
+- else
+  - btn_string = t('common.save_change')
+= form_for user, url: update_profile_users_path, id: 'user-form', html: {method: :put, multipart: true, class: 'form-horizontal user-form'} do |f|
+
+  #user-form.block-content
+    .row
+      .col-md-4
+        .form-group
+          = f.label :email
+            = t('.email')
+            span.f_req *
+          = f.text_field :email, readonly:true, class: 'form-control'
+        .form-group
+          = f.label :password
+            = t('.password')
+            span.f_req *
+          = f.password_field :password, class: 'form-control'
+        .form-group
+          = f.label :password_confirmation
+            = t('.password_confirmation')
+            span.f_req *
+          = f.password_field :password_confirmation, class: 'form-control'
+      / .col-md-4.col-md-offset-1.right-block
+      /   .form-group
+      /     = f.label :first_name
+      /       = t('.first_name')
+      /       span.f_req
+      /     = f.text_field :first_name, class: 'form-control'
+      /   .form-group
+      /     = f.label :last_name
+      /       = t('.last_name')
+      /       span.f_req
+      /     = f.text_field :last_name, class: 'form-control'
+      /   .form-group
+      /     = f.label :mobile
+      /       = t('.mobile')
+      /       span.f_req
+      /     = f.text_field :mobile, class: 'form-control'
+    .row.top-space
+      .col-md-4
+        .form-group
+          = f.submit class: 'btn btn-sm btn-primary', value: "Save change"
+          = link_to root_path, class: 'btn btn-sm btn-default'
+            .btn.btn-sm.btn-danger
+              |Cancel

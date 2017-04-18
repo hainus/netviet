@@ -10,6 +10,7 @@
 //= require contact_me
 //= require main
 //= require jquery_ujs
+//= require twitter/bootstrap
 //= require turbolinks
 //= require cable
 //= require_tree .
