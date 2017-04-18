@@ -1,0 +1,27 @@
+doctype html
+/![if IE 9] <html class="ie9 no-focus"
+/! [if gt IE 9]><!
+html.no-focus
+  /! <![endif]
+  head
+    meta charset="utf-8"
+    title
+      = t('.order_connect_v4')
+    meta content=("OneUI - Admin Dashboard Template & UI Framework created by pixelcave and published on Themeforest") name="description"
+    meta content="pixelcave" name="author"
+    meta content="noindex, nofollow" name="robots"
+    meta content="width=device-width,initial-scale=1,maximum-scale=1.0" name="viewport"
+    = stylesheet_link_tag  'application_login', media: 'all', 'data-turbolinks-track' => true
+    /! Icons
+    /! The following icons can be replaced with your own, they are used by desktop and mobile browsers
+    / = render "shared/favicon"
+    /! END Icons
+    /! Stylesheets
+    /! OneUI CSS framework
+    /! You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg:
+    /! END Stylesheets
+    = javascript_include_tag 'application_login', 'data-turbolinks-track' => true
+    link href="#{asset_path('favicon.ico')}" rel=("shortcut icon")
+    = csrf_meta_tags
+  body
+    = yield

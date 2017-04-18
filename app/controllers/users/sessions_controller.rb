@@ -7,9 +7,6 @@ class Users::SessionsController < Devise::SessionsController
   # end
 
   # POST /resource/sign_in
-  # def create
-  #   super
-  # end
 
   # DELETE /resource/sign_out
   # def destroy
@@ -23,6 +20,13 @@ class Users::SessionsController < Devise::SessionsController
   #   devise_parameter_sanitizer.permit(:sign_in, keys: [:attribute])
   # end
   # DELETE /resource/sign_out
+  layout 'login'
+  def new
+    super
+  end
+  # def edit
+  #   super
+  # end
   def destroy
     signed_out = (Devise.sign_out_all_scopes ? sign_out : sign_out(resource_name))
     yield if block_given?
