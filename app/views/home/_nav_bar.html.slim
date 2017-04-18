@@ -28,3 +28,39 @@
             a.page-scroll href="#partners"  ĐỐI TÁC
           li
             a.page-scroll href="#contact"  LIÊN HỆ
+          li
+            - if current_user
+              /! Header Navigation Right
+              ul.nav-header.pull-right
+                li
+                  .btn-group
+                    button.btn.btn-default.btn-image.dropdown-toggle data-toggle="dropdown" type="button"
+                      / = image_tag('current_user.avatar.url', class: "user_avatar", alt: t("common.avatar"))
+                      - if current_user
+                        = image_tag('about.jpg', class: "user_avatar", size: '30x30', alt: t("common.avatar"))
+                        span.caret
+                      -else
+                        span.caret
+
+                    ul.dropdown-menu.dropdown-menu-right
+                      li.dropdown-header
+                        = t('.profile')
+                      li
+                        = link_to edit_user_registration_path, tabindex: -1
+                          i.si.si-user.pull-right
+                          span.badge.badge-success.pull-right
+                          = t('.profile')
+                      / li
+                      /   = link_to user_notifications_path(current_user), tabindex: -1
+                      /     i.si.si-settings.pull-right
+                      /     = t('.notifications')
+                      li.divider
+                      li.dropdown-header
+                        =t('.actions')
+                      li
+                        = link_to  destroy_user_session_path, method: :delete ,tabindex: -1
+                          i.si.si-logout.pull-right
+                          = t(".logout")
+            - else
+              = link_to  new_user_session_path, method: :delete ,tabindex: -1
+                = t(".login")

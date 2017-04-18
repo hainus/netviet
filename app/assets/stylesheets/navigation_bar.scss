@@ -1,6 +1,13 @@
 /* Navigation */
 #nav {
   z-index: 9999;
+  button.btn.btn-default.btn-image.dropdown-toggle{
+    padding: 0px;
+  }
+  ul.pull-right{
+    margin-bottom: 0px;
+    padding-top: 8px;
+  }
 }
 #nav.affix {
   position: fixed;
