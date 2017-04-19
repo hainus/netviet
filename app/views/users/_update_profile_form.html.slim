@@ -51,3 +51,20 @@
           = link_to root_path, class: 'cancel'
             .btn.btn-danger
               |Cancel
+javascript:
+  $('#input-file #pictureInput').on('change', function(event) {
+    var files, image, reader;
+    files = event.target.files;
+    image = files[0];
+    console.log(image.size);
+    reader = new FileReader;
+    reader.onload = function(file) {
+      var img;
+      img = new Image;
+      console.log(file);
+      img.src = file.target.result;
+      $('#target').html(img);
+      console.log('minh hai');
+    };
+    reader.readAsDataURL(image);
+  });
