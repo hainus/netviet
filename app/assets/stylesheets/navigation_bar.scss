@@ -8,6 +8,21 @@
     margin-bottom: 0px;
     padding-top: 8px;
   }
+  nav.navbar.navbar-custom{
+    .navbar-right{
+      .btn-group{
+        height: 35px;
+        width: 47px;
+        .dropdown-toggle {
+          width: 100%;
+          height: 100%;
+        }
+        .btn .caret{
+          margin-left: 33px;
+        }
+      }
+    }
+  }
 }
 #nav.affix {
   position: fixed;

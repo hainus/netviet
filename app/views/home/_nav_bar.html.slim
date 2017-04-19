@@ -35,12 +35,8 @@
                 li
                   .btn-group
                     button.btn.btn-default.btn-image.dropdown-toggle data-toggle="dropdown" type="button"
-                      / = image_tag('current_user.avatar.url', class: "user_avatar", alt: t("common.avatar"))
-                      - if current_user
-                        = image_tag('about.jpg', class: "user_avatar", size: '30x30', alt: t("common.avatar"))
-                        span.caret
-                      -else
-                        span.caret
+                      = image_tag(current_user.avatar.url, class: "user_avatar", size: '30x30', alt: t("common.avatar"))
+                      span.caret
 
                     ul.dropdown-menu.dropdown-menu-right
                       li.dropdown-header

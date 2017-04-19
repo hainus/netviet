@@ -56,7 +56,7 @@ gem 'slim-rails', '3.1.0'
 gem 'sprockets-rails', '~> 3.0', '>= 3.0.4'
 # gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'pg', '~> 0.18.2'
-gem 'paperclip', '~> 4.3', '>= 4.3.6'
+gem "paperclip", "~> 5.0.0"
 gem 'devise', '~> 4.2'
 gem "font-awesome-rails"
 gem 'twitter-bootstrap-rails', '~> 3.2.0'

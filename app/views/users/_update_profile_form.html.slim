@@ -22,6 +22,10 @@
             = t('.password_confirmation')
             span.f_req *
           = f.password_field :password_confirmation, class: 'form-control'
+        .form-group
+          #target
+            = image_tag(current_user.avatar.url, class: "user_avatar", id: 'targext', alt: t("common.avatar"))
+          = f.file_field :avatar, id: 'pictureInput'
       / .col-md-4.col-md-offset-1.right-block
       /   .form-group
       /     = f.label :first_name
