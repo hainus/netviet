@@ -1,0 +1,22 @@
+<script type="text/javascript">
+  Position.buildMapFromMarkerHash("company-position-map", 17, <%=raw hash.to_json %>);
+
+
+  // var handler;
+
+  // handler = Gmaps.build('Google');
+
+  // handler.buildMap({
+  //   provider: {},
+  //   internal: {
+  //     id: 'company-position-map'
+  //   }
+  // }, function() {
+  //   var markers;
+  //   markers = handler.addMarkers(<%=raw hash.to_json %>);
+  //   handler.bounds.extendWith(markers);
+  //   handler.fitMapToBounds();
+  //   window.map = handler.getMap();
+  //   return map.setZoom(17);
+  // });
+</script>

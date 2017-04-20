@@ -60,4 +60,4 @@ gem "paperclip", "~> 5.0.0"
 gem 'devise', '~> 4.2'
 gem "font-awesome-rails"
 gem 'twitter-bootstrap-rails', '~> 3.2.0'
-
+gem 'gmaps4rails'

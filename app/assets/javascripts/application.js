@@ -4,6 +4,8 @@
 //= require SmoothScroll
 //= require easypiechart
 //= require jquery.isotope
+//= require underscore
+//= require gmaps/google
 //= require jquery.counterup
 //= require waypoints
 //= require jqBootstrapValidation
