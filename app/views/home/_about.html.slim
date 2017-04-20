@@ -1,3 +1,6 @@
+/ tinymce
+= tinymce_assets
+= tinymce
 /! About Section
 #about
   .container
@@ -19,6 +22,8 @@
           p - Hỗ trợ kỹ thuật, thực hiện các dịch vụ bảo hành – sửa chữa hệ thống tổng đài & hệ thống camera quan sát.
           p - Tư vấn lắp đặt, thiết kế và thi công hoàn chỉnh các hệ thống an ninh mạng Viễn thông.
           p - Bảo trì, bảo dưỡng hệ thống tổng đài điện thoại, báo trộm - báo cháy, camera quan sát, máy chấm công... và các thiết bị văn phòng khác.
+
+          = text_area_tag :content, "", :class => "tinymce", :rows => 10, :cols => 80
           p.text-center
             a.btn.btn-primary href="#"
               i.fa.fa-download

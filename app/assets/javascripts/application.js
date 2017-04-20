@@ -9,6 +9,7 @@
 //= require jqBootstrapValidation
 //= require contact_me
 //= require main
+//= require tinymce-jquery.js
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require turbolinks
