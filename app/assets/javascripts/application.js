@@ -1,4 +1,5 @@
 //= require jquery.1.11.1
+//= require active_admin/base
 //= require jquery.prettyPhoto
 //= require bootstrap.min
 //= require SmoothScroll
