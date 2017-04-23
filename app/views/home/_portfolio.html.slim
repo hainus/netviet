@@ -2,7 +2,7 @@
   .container
     .section-title.text-center.center
       h2 DỊCH VỤ
-      hr/
+      hr
     .categories
       ul.cat
         li
@@ -20,82 +20,20 @@
       .clearfix
     .row
       .portfolio-items
-        .col-sm-6.col-md-3.col-lg-3.camera
-          .portfolio-item
-            .hover-bg
-              = link_to "#{asset_path('portfolio/camera-giam-sat-nha-rieng.jpg')}", rel: ("prettyPhoto")
-                .hover-text
-                  h4 Giám sát nhà riêng
-                  small Giải Pháp Camera
+        - portfolios.each do |portfolio|
+          .col-sm-6.col-md-3.col-lg-3 class="#{portfolio.catgory}"
+            .portfolio-item
+              .hover-bg
+                = link_to "#{asset_path('portfolio/camera-giam-sat-nha-rieng.jpg')}", rel: ("prettyPhoto")
+                  .hover-text
+                    h4 = portfolio.name
 
-                = image_tag "portfolio/01-small.jpg", class: "img-responsive img-proj", alt: "Project Title"
-            .btn.btn-primary
-              = link_to download_pdf_home_index_url, class:'btn btn-primary download-details', target: "_blank"
-                p.text-center
-                  i.fa.fa-download.text-center
-                  | Download
-
-
-
-        .col-sm-6.col-md-3.col-lg-3.web
-          .portfolio-item
-            .hover-bg
-              a href="img/portfolio/02-large.jpg" rel="prettyPhoto" title=("Project description")
-              .hover-text
-                h4 Project Title
-                small App Development
-              = image_tag "portfolio/02-small.jpg", class: "img-responsive", alt: "Project Title"
-
-        .col-sm-6.col-md-3.col-lg-3.camera
-          .portfolio-item
-            .hover-bg
-              a href="img/portfolio/03-large.jpg" rel="prettyPhoto" title=("Project description")
-              .hover-text
-                h4 Project Title
-                small Web Design
-              = image_tag "portfolio/03-small.jpg", class: "img-responsive", alt: "Project Title"
-
-        .col-sm-6.col-md-3.col-lg-3.camera
-          .portfolio-item
-            .hover-bg
-              a href="img/portfolio/04-large.jpg" rel="prettyPhoto" title=("Project description")
-              .hover-text
-                h4 Project Title
-                small Web Design
-              = image_tag "portfolio/04-small.jpg", class: "img-responsive", alt: "Project Title"
-
-        .col-sm-6.col-md-3.col-lg-3.network
-          .portfolio-item
-            .hover-bg
-              a href="img/portfolio/05-large.jpg" rel="prettyPhoto" title=("Project description")
-              .hover-text
-                h4 Project Title
-                small App Development
-              = image_tag "portfolio/05-small.jpg", class: "img-responsive", alt: "Project Title"
-
-        .col-sm-6.col-md-3.col-lg-3.network
-          .portfolio-item
-            .hover-bg
-              a href="img/portfolio/06-large.jpg" rel="prettyPhoto" title=("Project description")
-              .hover-text
-                h4 Project Title
-                small Branding
-              = image_tag "portfolio/06-small.jpg", class: "img-responsive", alt: "Project Title"
-
-        .col-sm-6.col-md-3.col-lg-3.branding.web
-          .portfolio-item
-            .hover-bg
-              a href="img/portfolio/07-large.jpg" rel="prettyPhoto" title=("Project description")
-              .hover-text
-                h4 Project Title
-                small App Development, Branding
-              = image_tag "portfolio/07-small.jpg", class: "img-responsive", alt: "Project Title"
-
-        .col-sm-6.col-md-3.col-lg-3.security
-          .portfolio-item
-            .hover-bg
-              a href="img/portfolio/08-large.jpg" rel="prettyPhoto" title=("Project description")
-              .hover-text
-                h4 Project Title
-                small Web Design
-              = image_tag "portfolio/08-small.jpg", class: "img-responsive", alt: "Project Title"
+                  = image_tag "#{portfolio.small_image.url(:medium)}", class: "img-responsive img-proj", alt: "Project Title"
+              .footer
+                .category-name
+                  = portfolio.catgory
+                .btn.btn-primary
+                  = link_to download_pdf_home_index_url, class:'btn btn-primary download-details', target: "_blank"
+                    p.text-center
+                      i.fa.fa-download.text-center
+                      | Chi tiết

@@ -47,24 +47,22 @@ ActiveRecord::Schema.define(version: 20170422090126) do
   end
 
   create_table "portfolios", force: :cascade do |t|
-    t.integer  "type"
-    t.string   "type_name"
-    t.integer  "category"
-    t.string   "category_name"
-    t.string   "image_1_file_name"
-    t.string   "image_1_content_type"
-    t.integer  "image_1_file_size"
-    t.datetime "image_1_updated_at"
-    t.string   "image_2_file_name"
-    t.string   "image_2_content_type"
-    t.integer  "image_2_file_size"
-    t.datetime "image_2_updated_at"
+    t.string   "name"
+    t.integer  "catgory"
+    t.string   "small_image_file_name"
+    t.string   "small_image_content_type"
+    t.integer  "small_image_file_size"
+    t.datetime "small_image_updated_at"
+    t.string   "large_image_file_name"
+    t.string   "large_image_content_type"
+    t.integer  "large_image_file_size"
+    t.datetime "large_image_updated_at"
     t.string   "pdf_file_name"
     t.string   "pdf_content_type"
     t.integer  "pdf_file_size"
     t.datetime "pdf_updated_at"
-    t.datetime "created_at",           null: false
-    t.datetime "updated_at",           null: false
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
   create_table "users", force: :cascade do |t|
