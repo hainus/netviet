@@ -91,8 +91,20 @@ hr {
 
 
 /* Media Queries */
+@media(max-width:600px){
+   #banner .container{
+    .intro{
+      padding: 0px;
+      .w3-content.w3-display-container{
+        .mySlides{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
 @media(min-width:768px) {
-  #header .container{
+  #banner .container{
     height: 100%;
     width: 100%;
     padding: 0px;
@@ -200,7 +212,7 @@ hr {
   	padding-top: 300px;
   	padding-bottom: 200px;
   }
-  header#header{
+  header#banner{
     height: 90%
   }
 
