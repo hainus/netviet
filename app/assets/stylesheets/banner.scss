@@ -17,3 +17,23 @@
 .section-title.center {
   padding: 25px 0 45px 0;
 }
+
+
+#banner{
+  .w3-content.w3-display-container{
+    .w3-text-red{
+      color: red;
+      opacity: 0.2;
+    }
+  }
+  .circle-selected{
+    .blue-icon{
+      background-color: blue !important;
+      opacity: 0.1;
+    }
+    .w3-badge{
+      color: red;
+      opacity: 0.3;
+    }
+  }
+}

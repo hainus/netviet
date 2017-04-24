@@ -1,7 +1,13 @@
 /* Skills Section */
 #skills {
   padding: 100px 0;
-  background: #d48a8a;
+  // background: #d48a8a;
+  background: url('bg/bg32.jpg') no-repeat center top;
+  background-size: cover;
+  background-attachment:fixed;
+  background-position: left top;
+  // position:absolute;
+  // background-size: 100% 100%;
 }
 #skills h2 {
   color: #fff;
@@ -34,7 +40,7 @@
 .percent {
   display: inline-block;
   font-size: 21px;
-  color: #121d1f;
+  color: blue;
   line-height: 152px;
   z-index: 2;
 }
