@@ -7,57 +7,57 @@ header#banner
         = image_tag banner_images.image2.url(:large), class: "mySlides w3-animate-fading"
         = image_tag banner_images.image3.url(:large), class: "mySlides w3-animate-fading"
         // manual translation
-        / .w3-center.w3-container.w3-section.w3-large.w3-text-red.w3-display-bottommiddle style="width:100%"
-        /   .w3-left.w3-hover-text-khaki onclick="plusDivs(-1)"
-        /     .fa.fa-angle-left
-        /   .w3-right.w3-hover-text-khaki onclick="plusDivs(1)"
-        /     .fa.fa-angle-right
-        / .circle-selected
-        /   span.w3-badge.demo.w3-border.w3-transparent.w3-hover-white onclick="currentDiv(1)"
-        /   span.w3-badge.demo.w3-border.w3-transparent.w3-hover-white onclick="currentDiv(2)"
-        /   span.w3-badge.demo.w3-border.w3-transparent.w3-hover-white onclick="currentDiv(3)"
+        .w3-center.w3-container.w3-section.w3-large.w3-text-red.w3-display-bottommiddle style="width:100%"
+          .w3-left.w3-hover-text-khaki onclick="plusDivs(-1)"
+            .fa.fa-angle-left
+          .w3-right.w3-hover-text-khaki onclick="plusDivs(1)"
+            .fa.fa-angle-right
+        .circle-selected
+          span.w3-badge.demo.w3-border.w3-transparent.w3-hover-white onclick="currentDiv(1)"
+          span.w3-badge.demo.w3-border.w3-transparent.w3-hover-white onclick="currentDiv(2)"
+          span.w3-badge.demo.w3-border.w3-transparent.w3-hover-white onclick="currentDiv(3)"
 
 javascript:
   // manual translation
-  // var slideIndex = 1;
-  // showDivs(slideIndex);
+  var slideIndex = 1;
+  showDivs(slideIndex);
 
-  // function plusDivs(n) {
-  //   showDivs(slideIndex += n);
-  // }
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
 
-  // function currentDiv(n) {
-  //   showDivs(slideIndex = n);
-  // }
+  function currentDiv(n) {
+    showDivs(slideIndex = n);
+  }
 
-  // function showDivs(n) {
-  //   var i;
-  //   var x = document.getElementsByClassName("mySlides");
-  //   var dots = document.getElementsByClassName("demo");
-  //   if (n > x.length) {slideIndex = 1}
-  //   if (n < 1) {slideIndex = x.length}
-  //   for (i = 0; i < x.length; i++) {
-  //      x[i].style.display = "none";
-  //   }
-  //   for (i = 0; i < dots.length; i++) {
-  //      dots[i].className = dots[i].className.replace(" blue-icon", "");
-  //   }
-  //   x[slideIndex-1].style.display = "block";
-  //   dots[slideIndex-1].className += " blue-icon";
-  // }
-
-  // auto translation
-  var myIndex = 0;
-  carousel();
-
-  function carousel() {
+  function showDivs(n) {
     var i;
     var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
     for (i = 0; i < x.length; i++) {
        x[i].style.display = "none";
     }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 3000);
+    for (i = 0; i < dots.length; i++) {
+       dots[i].className = dots[i].className.replace(" blue-icon", "");
+    }
+    x[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " blue-icon";
   }
+
+  // auto translation
+  // var myIndex = 0;
+  // carousel();
+
+  // function carousel() {
+  //   var i;
+  //   var x = document.getElementsByClassName("mySlides");
+  //   for (i = 0; i < x.length; i++) {
+  //      x[i].style.display = "none";
+  //   }
+  //   myIndex++;
+  //   if (myIndex > x.length) {myIndex = 1}
+  //   x[myIndex-1].style.display = "block";
+  //   setTimeout(carousel, 3000);
+  // }
