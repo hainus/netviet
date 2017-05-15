@@ -6,6 +6,8 @@ class User < ApplicationRecord
 
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
 
+  process_in_background :avatar, processing_image_url: "/assets/about.jpg"
+
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 end
